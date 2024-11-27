@@ -70,7 +70,7 @@ SEN_m <- function(X, epsilon = 0.0001, init_method = c("optimize", "kmeans")) {
   print(sprintf("Initializing with %s...", init_method))
   if (init_method == "kmeans") {
     temp  <- stats::kmeans(MixtureMissing::mean_impute(X), centers = 1)
-    mu[G,]    <- temp$centers
+    mu    <- matrix(temp$centers, nrow = G)
     Sigma <- Rfast::cova(mean_impute(X))  # matrix
     theta <- 0.2                          # vector
   } else {
