@@ -42,11 +42,11 @@ res1 = SEN_m(X_m1) # 8 w/ e = 0.0001
 # res4 = SEN_m(X_m4) # 3 w/ e = 0.0001
 
 ############################################# kmeans
-# res1 = SEN_m(X_m1, init_method = "kmeans") # 200 w/ e = 0.0001
+res1_kmeans = SEN_m(X_m1, init_method = "kmeans") # 200 w/ e = 0.0001
 
 # This one runs 33 and produces FALSE in V5
-res2 = SEN_m(X_m2, init_method = "kmeans") # 12 w/ e = 0.0001
+res2_kmeans = SEN_m(X_m2, init_method = "kmeans") # 12 w/ e = 0.0001
 
-# res22 = SEN_m(X_m2, epsilon = 0.1, init_method = "kmeans") # 7 w/ e = 0.1, 9 W/ E = 0.01
-# res3 = SEN_m(X_m3, init_method = "kmeans") # 200 w/ e = 0.0001
-# res4 = SEN_m(X_m4, init_method = "kmeans") # 200 w/ e = 0.0001
+# res22_kmeans = SEN_m(X_m2, epsilon = 0.1, init_method = "kmeans") # 7 w/ e = 0.1, 9 W/ E = 0.01
+# res3_kmeans = SEN_m(X_m3, init_method = "kmeans") # 200 w/ e = 0.0001
+# res4_kmeans = SEN_m(X_m4, init_method = "kmeans") # 200 w/ e = 0.0001
